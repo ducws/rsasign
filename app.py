@@ -67,49 +67,6 @@ if LOGGED_IN == True:
                             st.error("Invalid digital sign, something was changed 🚨🚨🚨")
 
 
-            # with col2:
-            #     st.header('File encryption')
-            #     data_to_encrypt = st.file_uploader("Upload File to Encrypt")
-            #     if data_to_encrypt is not None:         
-            #         # Example usage
-            #         filename = data_to_encrypt.name # Replace this with the name of the file you're searching for
-            #         result = find_file(filename)
-            #         if result:
-            #             print(f"File found at: {result}")
-            #         else:
-            #             print("File not found.")
-
-            #         aes_key = generate_aes_key()
-            #         if 'clicked' not in st.session_state:
-            #             st.session_state.clicked = False
-
-            #         def click_button():
-            #             st.session_state.clicked = True
-
-            #         st.button('Download encrypted file', on_click=click_button)
-
-            #         if st.session_state.clicked:
-            #             authTag, nonce = encrypt_file(result, aes_key, AES.MODE_GCM)
-
-            #             with open('_secret_auth_.json', 'r') as f:
-            #                 data = json.load(f)
-
-            #                 for user in data:
-            #                     if user['username'] == username:
-            #                         user['authTag'] = b64encode(authTag).decode('utf-8') 
-            #                         user['nonce'] = b64encode(nonce).decode('utf-8')  
-            #                         publickey = user['public_key']
-            #                         loaded_pubkey = rsa.PublicKey.load_pkcs1(publickey.encode())
-            #                         encrypted_aes_key = encrypt_aes_key(aes_key, loaded_pubkey)
-            #                         hex_aes = b64encode(encrypted_aes_key).decode('utf-8')
-            #                         user['aeskey'] = hex_aes
-            #                         break
-
-            #                 # Write the updated data back to the JSON file
-            #             with open('_secret_auth_.json', 'w') as f:
-            #                 json.dump(data, f, indent=4)
-                            
-            #             st.success('File downloaded to current directory')
             with col2:
                 st.header('File signing')
                 check = False
