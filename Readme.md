@@ -16,7 +16,7 @@ any file to check the integrity.
 ## Installation
 
 **Install all the libs in requirements.txt.**
-**You can either download the zip version and unzip, then run the service using `streamlit run app.py` or using bash:**
+**You can either download the zip version and unzip --> install requirements.txt --> run the service using `streamlit run app.py` or use bash:**
 
 ```bash
 # Clone the repository
