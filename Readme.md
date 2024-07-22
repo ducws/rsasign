@@ -20,7 +20,7 @@ any file to check the integrity.
 
 ```bash
 # Clone the repository
-git clone https://github.com/ducpro0712/rsasign
+git clone https://github.com/ducws/rsasign
 
 # Navigate to the project directory
 cd your_repository
